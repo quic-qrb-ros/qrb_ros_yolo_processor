@@ -1,12 +1,13 @@
 // Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
+#include "yolo_seg_overlay.hpp"
+
 #include <iostream>
 
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/opencv.hpp"
-#include "yolo_seg_overlay.hpp"
 
 namespace qrb::yolo_processor
 {
@@ -41,7 +42,7 @@ void YoloSegOverlay::draw_inplace(std::vector<YoloInstance> & detections, cv::Ma
 
   // overlay mask
 
-  //merge all mask together
+  // merge all mask together
   cv::Mat merged_mask(160, 160, CV_8UC1, cv::Scalar(0));
   for (auto & det : detections) {
     cv::Mat mask(160, 160, CV_8UC1, det.mask.data());

@@ -1,12 +1,13 @@
 // Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
+#include "yolo_det_overlay.hpp"
+
 #include <iostream>
 
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/opencv.hpp"
-#include "yolo_det_overlay.hpp"
 
 namespace qrb::yolo_processor
 {

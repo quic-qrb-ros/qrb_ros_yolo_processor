@@ -1,6 +1,8 @@
 // Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
+#include "yolo_seg_postprocess.hpp"
+
 #include <yaml-cpp/yaml.h>
 
 #include <cstdint>
@@ -9,7 +11,6 @@
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/opencv.hpp"
-#include "yolo_seg_postprocess.hpp"
 
 namespace qrb::yolo_processor
 {
@@ -274,7 +275,7 @@ void YoloSegPostProcessor::process(const std::vector<Tensor> & tensors,
   std::vector<std::vector<float>> vec_mask(n, std::vector<float>(32));
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < mask_dims; j++) {
-      vec_mask[i][j] = ptr_mask[indices[i] + 8400*j];
+      vec_mask[i][j] = ptr_mask[indices[i] + 8400 * j];
     }
   }
 

@@ -1,8 +1,9 @@
 // Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
-#include "cv_bridge/cv_bridge.h"
 #include "qrb_ros_yolo_processor/yolo_seg_overlay_node.hpp"
+
+#include "cv_bridge/cv_bridge.h"
 
 namespace qrb_ros::yolo_processor
 {

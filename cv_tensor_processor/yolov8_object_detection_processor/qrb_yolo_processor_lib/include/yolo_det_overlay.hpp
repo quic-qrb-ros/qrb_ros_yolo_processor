@@ -25,4 +25,4 @@ public:
 };
 
 }  // namespace qrb::yolo_processor
-#endif // _QRB_YOLO_DETECTION_OVERLAY_HPP_
+#endif  // _QRB_YOLO_DETECTION_OVERLAY_HPP_

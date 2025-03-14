@@ -8,7 +8,6 @@
 #include "qrb_ros_tensor_list_msgs/msg/tensor_list.hpp"
 #include "qrb_ros_vision_msgs/msg/detection2_d_with_mask.hpp"
 #include "qrb_ros_vision_msgs/msg/detection2_d_with_mask_array.hpp"
-
 #include "qrb_yolo_processor/yolo_seg_postprocess.hpp"
 #include "rclcpp/rclcpp.hpp"
 
@@ -41,9 +40,7 @@ private:
       std::vector<qrb::yolo_processor::YoloInstance> & instances);
   std::unique_ptr<qrb::yolo_processor::YoloSegPostProcessor> processor_{ nullptr };
   rclcpp::Subscription<custom_msg::TensorList>::SharedPtr sub_{ nullptr };
-  rclcpp::Publisher<qrb_ros_vision_msgs::msg::Detection2DWithMaskArray>::SharedPtr pub_{
-    nullptr
-  };
+  rclcpp::Publisher<qrb_ros_vision_msgs::msg::Detection2DWithMaskArray>::SharedPtr pub_{ nullptr };
 };
 
 }  // namespace qrb_ros::yolo_processor

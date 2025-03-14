@@ -33,8 +33,7 @@ private:
   std::unique_ptr<qrb::yolo_processor::YoloSegOverlay> overlay_{ nullptr };
   std::unique_ptr<ExactSync> exact_sync_{ nullptr };
   std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image>> pub_{ nullptr };
-  message_filters::Subscriber<qrb_ros_vision_msgs::msg::Detection2DWithMaskArray>
-      yolo_seg_sub_;
+  message_filters::Subscriber<qrb_ros_vision_msgs::msg::Detection2DWithMaskArray> yolo_seg_sub_;
   message_filters::Subscriber<sensor_msgs::msg::Image> img_sub_;
 
   void msg_callback(sensor_msgs::msg::Image::ConstSharedPtr img_msg,

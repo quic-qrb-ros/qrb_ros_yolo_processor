@@ -1,12 +1,13 @@
 // Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
+#include "qrb_ros_yolo_processor/yolo_seg_post_node.hpp"
+
 #include <chrono>
 #include <iostream>
 #include <string>
 #include <vector>
 
-#include "qrb_ros_yolo_processor/yolo_seg_post_node.hpp"
 #include "sensor_msgs/msg/image.hpp"
 
 namespace qrb_ros::yolo_processor

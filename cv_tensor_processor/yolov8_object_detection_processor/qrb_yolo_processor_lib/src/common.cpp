@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
 #include "common.hpp"
+
 #include "opencv2/opencv.hpp"
 
 namespace qrb::yolo_processor
@@ -74,7 +75,7 @@ int make_cvtype(DataType dtype, int channel)
 std::string get_tensor_shape_str(const Tensor & tensor)
 {
   std::ostringstream oss;
-  oss <<  tensor.name << ": dtype=" << static_cast<int>(tensor.dtype) << ", shape=[";
+  oss << tensor.name << ": dtype=" << static_cast<int>(tensor.dtype) << ", shape=[";
 
   for (size_t i = 0; i < tensor.shape.size(); ++i) {
     oss << tensor.shape[i];

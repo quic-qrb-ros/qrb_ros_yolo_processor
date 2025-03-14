@@ -90,7 +90,6 @@ struct YoloInstance
   }
 };
 
-
 /**
  * \brief make CV_TYPE as per DataType::dtype and channel number
  * \param dtype data type
