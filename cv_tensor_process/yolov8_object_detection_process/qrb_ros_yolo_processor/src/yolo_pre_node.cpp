@@ -3,7 +3,7 @@
 
 #include "qrb_ros_yolo_processor/yolo_pre_node.hpp"
 
-#include <cv_bridge/cv_bridge.h>
+#include <cv_bridge/cv_bridge.hpp>
 
 #include "builtin_interfaces/msg/time.hpp"
 

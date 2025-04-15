@@ -3,7 +3,7 @@
 
 #include "qrb_ros_yolo_processor/yolo_det_overlay_node.hpp"
 
-#include <cv_bridge/cv_bridge.h>
+#include <cv_bridge/cv_bridge.hpp>
 
 namespace qrb_ros::yolo_processor
 {
